@@ -95,6 +95,8 @@ Open your browser to http://localhost:3000
 my-rag-chatbot/
 ├── backend/
 │   └── index.js
+│   └── index.js
+│   └── index.js
 ├── frontend/
 │   └── chat-for-workorders/
 │       ├── src/
