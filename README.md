@@ -53,53 +53,45 @@ npm install
 cd ../frontend/chat-for-workorders
 npm install
 ```
-ChromaDB Server (Python)
-bash
-Copy
-Edit
-cd ../../chroma
-python3 -m venv venv
-source venv/bin/activate        # Use `venv\Scripts\activate` on Windows
-pip install -r requirements.txt
-python main.py                  # Starts ChromaDB
-3. Create Environment Files
-Backend .env:
-env
-Copy
-Edit
+**Start ChromaDB (Python REST Server)**
+```bash
+chromadb run --path ./chroma-storage
+```
+
+### 3. Create Environment Files
+**Backend .env:**
+```bash
 OPENAI_API_KEY=your-openai-key
-4. Store Your Documents as Embeddings
-bash
-Copy
-Edit
+```
+
+### 4. Store Your Documents as Embeddings
+
+```bash
 node store.js
+```
 This will process and embed your documents into ChromaDB using OpenAI embeddings.
 
-5. Test with a Terminal Query
-bash
-Copy
-Edit
-node query.js
-6. Run the App
-Start Backend Server
-bash
-Copy
-Edit
+### 5. Test with a Terminal Query
+```bash
+node query.js "How do I create a work order?"
+```
+
+### 6. Run the App
+
+**Start Backend Server**
+```bash
 cd backend
 node index.js
-Start Frontend React App
-bash
-Copy
-Edit
+```
+**Start Frontend React App**
+```bash
 cd ../frontend/chat-for-workorders
 npm start
+```
 Open your browser to http://localhost:3000
 
 📂 Folder Structure
-
-css
-Copy
-Edit
+```bash
 my-rag-chatbot/
 ├── backend/
 │   └── index.js
@@ -113,6 +105,8 @@ my-rag-chatbot/
 ├── store.js
 ├── query.js
 └── README.md
+```
+
 🙋 About Me
 
 👩‍💻 Built with 💖 by Julia Reinhart
