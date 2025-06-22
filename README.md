@@ -43,13 +43,13 @@ cd my-rag-chatbot
 ```
 
 ### 2. Install Dependencies
-Backend (Node.js)
+# Backend (Node.js)
 ```bash
 cd backend
 npm install
 ```
+# Frontend (React)
 ```bash
-Frontend (React)
 cd ../frontend/chat-for-workorders
 npm install
 ```
