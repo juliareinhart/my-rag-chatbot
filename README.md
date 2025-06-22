@@ -40,19 +40,19 @@ A full-stack, developer-focused RAG (Retrieval-Augmented Generation) chatbot app
 ```bash
 git clone https://github.com/juliareinhart/my-rag-chatbot.git
 cd my-rag-chatbot
-2. Install Dependencies
+```
+
+### 2. Install Dependencies
 Backend (Node.js)
-bash
-Copy
-Edit
+```bash
 cd backend
 npm install
+```
+```bash
 Frontend (React)
-bash
-Copy
-Edit
 cd ../frontend/chat-for-workorders
 npm install
+```
 ChromaDB Server (Python)
 bash
 Copy
