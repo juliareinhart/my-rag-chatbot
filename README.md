@@ -94,18 +94,15 @@ Open your browser to http://localhost:3000
 ```bash
 my-rag-chatbot/
 ├── backend/
-│   └── index.js
-│   └── index.js
-│   └── index.js
+│   ├── docs/
+│   ├── store.js
+│   ├── query.js
+│   └── server.js
+├── chroma-storage/
 ├── frontend/
 │   └── chat-for-workorders/
 │       ├── src/
-│       └── .env
-├── chroma/
-│   ├── main.py
-│   └── venv/
-├── store.js
-├── query.js
+│       └── public/
 └── README.md
 ```
 
