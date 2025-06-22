@@ -109,6 +109,6 @@ my-rag-chatbot/
 🙋 About Me
 
 👩‍💻 Built with 💖 by Julia Reinhart
-Math graduate, MERN stack developer, Java & MySQL enthusiast, and passionate about empowering developers to build real AI solutions without the bloat.
+Math graduate · AI engineer · MERN stack developer · Java & MySQL enthusiast · Passionate about empowering developers to build real-world AI solutions.
 
 🔗 [Connect with me on LinkedIn](https://www.linkedin.com/in/julia-reinhart-798aa6258/)
