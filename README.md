@@ -1,12 +1,12 @@
-🧠 Manual RAG Chatbot – Build Your Own AI Assistant (No LangChain)
+# 🧠 Manual RAG Chatbot – Build Your Own AI Assistant (No LangChain)
 
 A full-stack, developer-focused RAG (Retrieval-Augmented Generation) chatbot application where users can upload documents and ask questions about them. Built from scratch using ChromaDB, Node.js, and React — **no LangChain required**.
 
-📁 Upload your own docs → 🔍 Embed with ChromaDB → 💬 Chat via frontend
+## 📁 Upload your own docs → 🔍 Embed with ChromaDB → 💬 Chat via frontend
 
 ---
 
-🚀 Features
+## 🚀 Features
 
 📂 Upload and embed markdown/PDF documents  
 🔎 Document retrieval via ChromaDB (Python server)  
@@ -16,7 +16,7 @@ A full-stack, developer-focused RAG (Retrieval-Augmented Generation) chatbot app
 
 ---
 
-🛠 Tech Stack
+## 🛠 Tech Stack
 
 **Frontend**: React + Bootstrap  
 **Backend**: Node.js + Express  
@@ -25,13 +25,13 @@ A full-stack, developer-focused RAG (Retrieval-Augmented Generation) chatbot app
 
 ---
 
-📹 YouTube Demo
+## 📹 YouTube Demo
 
 [![Watch the video](https://img.youtube.com/vi/YOUR_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID_HERE)
 
 ---
 
-⚙️ Setup Instructions
+## ⚙️ Setup Instructions
 
 💡 Note: This app is intended for developers and requires your own OpenAI API key and Python environment.
 
