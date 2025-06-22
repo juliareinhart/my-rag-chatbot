@@ -111,4 +111,4 @@ my-rag-chatbot/
 👩‍💻 Built with 💖 by Julia Reinhart
 Math graduate, MERN stack developer, Java & MySQL enthusiast, and passionate about empowering developers to build real AI solutions without the bloat.
 
-🔗 Connect with me on LinkedIn
+🔗 [Connect with me on LinkedIn](https://www.linkedin.com/in/julia-reinhart-798aa6258/)
