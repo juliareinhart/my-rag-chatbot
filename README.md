@@ -1,4 +1,4 @@
-# 🧠 Manual RAG Chatbot – Build Your Own AI Assistant (No LangChain)
+# 👩‍💻 Manual RAG Chatbot – Build Your Own AI Assistant (No LangChain)
 
 A full-stack, developer-focused RAG (Retrieval-Augmented Generation) chatbot application where users can upload documents and ask questions about them. Built from scratch using ChromaDB, Node.js, and React — **no LangChain required**.
 
