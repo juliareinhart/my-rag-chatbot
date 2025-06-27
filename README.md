@@ -55,7 +55,8 @@ npm install
 ```
 **Start ChromaDB (Python REST Server)**
 ```bash
-chromadb run --path ./chroma-storage
+pip install chromadb
+chroma run --host 0.0.0.0 --port 8000
 ```
 
 ### 3. Create Environment Files
