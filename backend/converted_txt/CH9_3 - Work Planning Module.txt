@@ -1,0 +1,950 @@
+Enterprise Asset Management (EAMS) v15
+Work Planning Module
+End User Documentation
+Update 12/30/2024
+
+EAMS v15 End User Documentation:
+Work Planning Module
+Work Planning Module Overview
+The Work Planning Module is an optional and licensed business management method of identifying and
+evaluating activities that an organization performs, using activity-based costing to carry out a value
+analysis to improve strategic and operational decisions in an organization. It is also known as Activity
+Based Management. By evaluating planned versus actual work, organizations can optimize the planning
+and allocation of resources.
+While a work order shows the work completed, work planning shows what needs to be accomplished
+with the resources available. Work Planning builds on what the work order captures from a higher
+perspective. The work plan seeks to analyze key activities that the organization performs and not just
+capture costs of their execution, but to establish goals for future accomplishment. These future goals for
+activities and established for accomplishment value and for expected cost, based on available resources.
+The Plan can then be compared to actual accomplishment and cost to determine if the organization is
+on track to meet the established goals, or if resources should be adjusted to gain efficiency.
+Due to the complexity of initial setup and ongoing maintenance, it is strongly recommended that
+MaintStar provide training and system implementation assistance for this module.
+Planning and Budgeting for Municipalities Overview
+MaintStar’ s Work Planning System is specifically designed for municipalities to track varieties of daily
+activities, such as roads, sewers, traffic signs and other infrastructures repairs/replacements. This
+module is designed as a financial tool and is activities driven. It provides a great degree of detail for
+budgeting purposes, and in addition to planning capabilities, tracks actual amount of work performed
+against what was planned or budgeted.
+The infrastructure planning capabilities includes specific equipment requirements, (trucks, bulldozers,
+sweepers, etc.) materials needed (concrete, paint, etc.) as well as crew size planning. It also tracks crew
+productivity and provides automatic cost roll up to specific city department, subdivision, multi-level cost
+center, area etc.
+The planning capabilities provide a great degree of built-in flexibility and can be implemented on
+weekly, monthly, quarterly, or annual basis. It includes financial and budgeting components and should
+not be confused with a simple work order as it does more – it processes estimated work against actual.
+Definitions
+To project a budget for labor, materials and supporting equipment requirements, the following
+information needs to be entered and maintained in MaintStar:
+• Management Unit: often a Department, Division, Project or specific cost center
+• Activities: actual work or description of work to be accomplished, often tied to a unit of
+measurement, i.e. “HVAC Installation” with a measurement of “Each”
+• Work Quantity: the total volume of work per specific type of jobs, which is called Activity. For
+example, in case of estimating road-paving activities, total miles of roads need to be paved
+• Quantity per unit: unit of measure = 1 mile
+Page | 2
+
+EAMS v15 End User Documentation:
+Work Planning Module
+• Average Daily Productivity (ADP) –how many units produced per day by crew. Example: 10
+miles/day per crew
+• Crew: group of people performing specific tasks
+• Total crew days required: total work quantity/crew daily productivity
+• Unit Cost: budget/total work quantity (including labor and materials)
+• Account Number: Specific cost center-from MaintStar setup tables
+Work Planning Example
+In this example, there is a monthly plan to pave 100 miles of roads. The job to be performed by a
+maintenance crew consisting of:
+• One supervisor
+• Two paving specialists
+• Two truck drivers
+• Two maintenance workers
+• 1 Dump track = 3 hours a day
+• 1 Paving vehicle = 8 hours a day
+Budgeting period: The ‘time’ for which budget is setup and tracked (week, month, quarter, year)
+Percentage of activities distribution: percentage of total labor, equipment required, and materials
+distribution per each activity for each Management Unit for specific budgeting period. For example, if
+there is a budget for 12 monthly periods, streets paving may represent 8% of total daily activities for an
+entire maintenance department. The maintenance department may perform other activities, such as
+streets sweeping, trimming trees, repairing road drains, etc.
+• % default come from an activity code setup
+Each activity must have a specific unique I/D or code, for example
+• Streets paving code: 0001
+• Streets sweeping code: 0002, etc.
+Labor days = total crew days x crew size / % per month. If there is a plan on a weekly basis, and a crew
+works 5 days a week, the total crew labor days =5x { (2people x1 1=full day for 2paving specialists+1x1(1
+paving vehicle driver) +2x1( 2 helpers) + 1X 0.25-dump truck driver which works only part time-one
+quarter of a day on this activities }=5.25 man days X 5 days per week=26,25 crew total man days per
+week required to accomplish streets paving.
+Work Planning Menus
+The Work Planning Module is accessed from the Work Planning menu item in the sidebar, and contains
+the following (all of which will be covered throughout this document):
+Page | 3
+
+EAMS v15 End User Documentation:
+Work Planning Module
+• Work Planning Setup: Contains the various setup and
+maintenance screens
+• Actual Entry: Allows for direct entry of time NOT associated
+with Work Orders, i.e. meetings, training, time off, etc
+• Work Plan Reports: Collection of pre-built reports specific to
+Work Planning. Reports can also be supplemented via Query and
+Reports
+• Tools: contains calendar and plan rollover tools
+Work Planning Setup Menu Overview
+The Work Planning setup section has several tabs across the top of the screen. These tabs were
+separate menu items in earlier versions of MaintStar.
+*The letter identifier is a reference from the previous version of MaintStar that many customers grew
+accustomed to and does not indicate any sort of precedence in setup.
+• (A) Work Plan: The primary screen for setting up the actual plans – this is used after setups
+have been completed.
+• (L) Activity: Screen for creating and updating activities. This can also be accomplished via Setup
+Tables in Setup > Tables.
+• (K) Management Unit: Screen for creating and updating Management Units
+• (M) Percentage Templates: Setup for allocation of resources by percentage or days.
+• (S) Calendar: Screen for setup of Fiscal (or Calendar) Years
+• (N) Activity Programs: A collection of Activities (i.e. Roads Activity Program may contain all
+activities pertaining to Roads)
+• (O) Labor Trades: Setup of Trades. This can also be accomplished via Setup Tables in Setup >
+Tables.
+Page | 4
+
+EAMS v15 End User Documentation:
+Work Planning Module
+• (Q) Equipment Types: Allows for classification of equipment, for instance “Trucks”, “Heavy
+Equipment”, etc.
+• (P) Material Classes: Allows for classification of materials, for instance “Paint”, “HVAC”, etc.
+• (R) Pay Types: Setup of Pay Types. This can also be accomplished via Setup Tables in Setup >
+Tables.
+• (X) Funding Sources: Allows for additional funding sources to be added
+Work Planning Setup
+The following is a suggestion for the initial setup of Work Planning. For the purposes of this
+documentation, there may be a slight variation in screens shown.
+Calendar Setup
+Start by setting up the fiscal year in the Calendar tab. This setup choice allows you to establish the
+budgeting time periods.
+*Note: If you check the check box to the left of a year line, a delete icon will appear next to the add
+button. DO NOT DELETE a line if it has valid data as it will not be retrievable.
+1. Click on Add button on a tool bar, then enter budget year. For example, 2021.
+2. Enter starting day of the fiscal year. Example 01/01/21
+Page | 5
+
+EAMS v15 End User Documentation:
+Work Planning Module
+3. Enter number of budgeting periods in the period # column, for example 12 for the monthly
+periods, or 52 for a weekly. NOTE: please make sure you decide to go with weekly or monthly
+before setting up and saving your work.
+4. Enter 1 in the Frequency number column if we budget on a monthly or weekly basis. It means
+one period per month or per week. Note: if you budget on a quarterly basis you may enter 3
+since there are three months in a single quarter.
+5. Using drop down selection in the Unit column select budgeting units (weeks, months, etc.)
+6. Click in the Default check box to indicate that this is a current budget we are going to work on.
+7. Select from the date format drop down lookup the date format you want to be displayed
+8. Manual Entry: there are two options here.
+• Crew Days: will be calculated automatically base on the current month and year when the
+Current Year button and the Hours button is clicked.
+• Percentage: workdays shown in the year details grid at the bottom of the screen, are
+calculated based on percentage template that is setup under tab ‘Percentage Templates M.’
+9. Leave the Budget Factors blank for now, it will be explained later
+10. Default Template: you will need to setup the template under Tab M and update it here.
+11. Click on Current Year button to select the working days for each month. You can change the
+working days by changing the numbers directly and working hours for each day by clicking on
+the hour buttons and view the changes. Click on Save Changes button if you want to keep the
+changes and click on Save button on the top of the current year table.
+12. Number of monthly working days can be edited from this screen by clicking on specific month
+13. In the Budget Factors columns enter any additional cost required if needed for this budget to be
+added on top for labor, equipment, material, non-general funds, etc. (often left as default)
+• For instance, if you need to increase 10% to the total labor cost, you will put 1.10. So, if
+your total labor cost is $100.00, then the total labor cost for the budget is $110.00.
+14. Click Save when Complete
+15. Repeat for past/future years if desired
+System Equipment Setup
+System Equipment Type Setup allows to setup equipment types or groups based on its functionality
+which will be used for planning. For example, using dump trucks, sweepers, and paving equipment for
+performing specific activities. This is the same setup choice as under Setup > Tables. Additional
+equipment types can be added if required. Enter hourly rate for equipment usage and estimated
+percentage of downtime (for example: a dump truck on average is used at 89% of its capacity, the rest
+11% of time is spent on repairing it and performing a PM tasks.
+Page | 6
+
+EAMS v15 End User Documentation:
+Work Planning Module
+1. Click Add to Add a new Type
+2. Enter Billing Rates, and Remarks if required then Save upon completion.
+• Rate/Hr.: will be used under option A. (work planning)
+• Down Time %: will be used under option B which is in the report section “Recourse
+Requirement report’ for Equipment only.
+• Billing/Hr: will be used under the “Actual Entry,“ menu section. This is the same as Billing
+Rate for Equip Type under Setup.
+Materials Setup
+This menu choice allows to setup categories of materials to be used. For example, for road repairs
+different type of concrete may be used. Here we will identify just a generic group of materials - called
+Class.
+1. Click on New, then enter material class, description, then unit name (example concrete we
+would measure in cubic feet, then cost per unit.
+2. Click Save
+Labor Setup
+This table is the setup for Trades and Trade rates. Trades can also be set up from the Setup > Tables.
+For example, Lead Utilities Operator $96.49/hr. Click on New, then enter labor trades and rates. Click on
+Save when finished.
+Page | 7
+
+EAMS v15 End User Documentation:
+Work Planning Module
+Activity Programs Setup
+(Planning menu, Option N.)
+This screen must be done here in Work Planning module.
+Page | 8
+
+EAMS v15 End User Documentation:
+Work Planning Module
+A group of individual activities is called a program. Example, street repair can be a Program. It consists of
+a variety of activities (tasks), such as sweeping, paving, removing old pavements, etc.
+- Deleting a line: highlight a line and click on delete (scissors). If the line is blank, save it then delete.
+Activity Percentage Distribution Template
+(Planning menu, Option M.)
+This template will be used under Option S (calendar setup) and Option K. Basically, this menu choice
+allows to replace a tedious repeatable data entry by setting up a template which can be reused. This
+template is used to set up the percentage of activities for each budgeting period. For example, streets
+sweeping represents 8% of total monthly work. You may establish different percentages for different
+periods for example June sweeping represents 8% of total work, but in July due to upcoming holidays
+and big crowds it will represent 12 % of total work.
+You may set up a template for sweeping with 8% activities per each month must be total to 100% for the
+entire year. Enter template id in a template field, then enter % per each month, then click on Save
+button on the right side of the window to save the template. You can save multiple different templates
+as you need. Templates are yearly dependent. When you are in this screen, the options you have are
+the buttons on the right-hand side.
+Note: you can enter your own numbers if it adds up totally 100. The number is the percentage number
+Setup Buttons and Options
+• New/Add: create a new template
+• Calculate Highlight Rows: highlight (Ctrl + left mouse clicks) the months you want to calculate
+percentage of work equal to 100%, then click this bottom.
+• Save: to save your template and changes.
+• Select/Return allows you to select a different template then apply to the plans by clicking on Get
+Default icon from another screen such as Option L.
+Page | 9
+
+EAMS v15 End User Documentation:
+Work Planning Module
+• Whole Number: if this box is checked, you can only enter an integer in the percentage fields. No
+decimal numbers.
+Pay Type
+The Pay Type table allows you to create different calculations of hourly cost for Labor pay. When labor
+entries are made for a technician in a work order or in direct entry, you can use the pay type field to
+select a pay type from this table to be applied to that entry. The formula you see here will adjust the
+labor rate for the labor entry.
+1. Click add to add a new pay type.
+2. Give it a name and description.
+3. You have three ways to manipulate the standard base pay rate:
+4. HrFactor Pay = This value is a multiplier to the base pay rate. 1.0 is no change, 1.5 is time and a
+half, 2.0 is doubletime.
+5. Hrfactor Xtra= This value will add to hourly calculation. Example Susan has an hourly pay rate of
+$25.00. If the pay rate we apply has a value of 2 in the Hrfactor Xtra, Susan’s rate will be
+calculated at $27.00 per hour ($25+2).
+6. Flat rate= This adds a flat amount for each entry. It would be used if you have a call out bonus
+paid if a technician is called out during the middle of the night etc. A Flat rate of $200.00 will
+add $200.00 to the normal hourly rate for a labor entry. Example John was called out during the
+night to solve a crisis. He worked for 4 hours. His hourly rate is $30.00. 30x4=120+ 200 flat call
+out rate =$320.00
+7. Put a check mark in your default pay rate type checkbox, and it will be applied to labor entries
+by default.
+Page | 10
+
+EAMS v15 End User Documentation:
+Work Planning Module
+Activity Description
+(Planning menu, Option L.)
+This menu choice allows you to create Activity Codes. An Activity code describe in plain English specific
+activities steps. The Activity code is a key element in Work Planning. It tracks “what work was
+performed”. The Activity code can be linked to the Activity Programs. Multiple Activity Codes can be link
+to one Activity Program.
+For instance, we have Activity Program of Road Repair. We can link different Activity Codes to this
+Activity Program such as Sweeping, Patching, Curb Painting, etc.
+Note: always save before leaving the screen.
+To change the Activity Distribution Percentage:
+1. Click on Get default icon on the tool bar and select distribution template (from the previous (M)
+menu choice) to link to this activities by using Select/Return button, then click OK to save.
+2. If you made any changes to the Activity after creating the Work Planning, you must select other
+activity, save; then re-select the activity, and Save to apply the new changes.
+3. If you made changes to the description after creating the Working Planning, it will not apply the
+current work planning. You can add the descriptions directly on the work planning by clicking on
+the Edit Task, save it, then click on Edit Task again to close. Another way to apply the text
+changes is to use option U.
+Page | 11
+
+EAMS v15 End User Documentation:
+Work Planning Module
+• Activity Code: example 0001 for paving, then description
+• Activity Program: (was previously established, example roads repairs), M option.
+• Inventory Unit: this was done in MaintStar Setup Module, Unit of Measure (example linear foot).
+The Inventory Unit can be typed in on this screen only. Inventory Unit and Work Unit don’t
+necessarily have to be the same.
+• Work Unit: this was done in MaintStar Setup Module, Unit of Measure
+• Same as Labor: if this box is checked, the qty work unit will be calculated the same as the unit of
+the labor cost. Normally, in most cases this box should not be checked; but, for Meetings
+example above, this box should be checked since you don’t have the quantity for meetings; so,
+the qty is the ‘same as labor’
+• Work Location: comes from Maintstar Setup Module, locations setup
+• Low and High: not used at this point
+The four windows below are text instructions for the project. See screen shot above. You must fill them
+out before going to Option A, or you can leave it blank and fill it in later under Option A., Edit Task.
+• Description of Work
+• Planning Criteria
+• Work Method, Check Point
+• Note
+Management Unit (Previously called -Activity System) Management Unit Setup
+(Planning menu, Option K.)
+Note: each level MUST be saved before next level is entered. Each level has its own Labor, Equipment,
+and Material Available.
+Page | 12
+
+EAMS v15 End User Documentation:
+Work Planning Module
+This portion of setup may be quite challenging to comprehend. We recommend on-site assistance and
+training to provide proper guidance as well as insurance that it is done right.
+The Management Unit is a way to structure a numerical code sequence which represents hierarchical
+levels in the structure of the organization. The code structure indicates the level and relationship of
+each work group in the hierarchy. The numerical coding has a purpose and must be created in the
+following format.
+When we do work planning, MaintStar allows us to plan for multiple departments which may be
+structured in hierarchical order. Example the planning to be done for a department (first level) which
+consists of the following sub departments or units (level 2). For instance, under “Public Works” you may
+find:
+1-Streets
+2-Parks
+3-Sewer
+4-Waste Water and so on…
+The streets department may consist of two following sub departments (level 3)
+Highways, Local Roads, and so on…
+We can budget for the entire Public Works with drill down up to 8 levels. With such capabilities you may
+budget for practically any size of operation (remember, to locate any individual in the entire 6 billion
+universe we may need just about 7 levels-Country, City, Street, etc.)
+Management Unit (MUST BE UNIQUE). It can be a department of organization for which we are setting
+the plan. Management Unit can be also a specific project, which needs to be tracked. It is identified by
+the Management Number which is a specific account or cost center where cost is charged. It can be
+broken down in hierarchical order up to 8 levels-for management reporting. Make sure to click on Save
+(OK) button for each administrative Number or before exiting the screen.
+The Management Unit Number (accounting number) consists of 8 levels (displayed at a top of the
+screen-8 fields). We use dashes in this example to show different levels of reporting structure and
+indicate separate fields of entry.
+Each layer down in the organization adds an additional digit to the Management Unit number.
+The example of a Management Unit Number is 111PB can be entered in the first left field (up to 5
+alpha-numeric characters)-we will call this field first level. For example, 111PW can be Public Works
+Department. Then one alpha numeric character can be entered in each of next 7 fields. -we will call
+these sub levels
+If we add another character (1) to the next field, we will have for example:
+Streets sub department UNDER Public Works 111PW-1
+Under Streets sub department-Signs department 111PW-1-1
+Under Streets sub department-General Maintenance sub department 111PW-1-2
+Parks sub department UNDER Public Works 111PW-2 and so on.
+Page | 13
+
+EAMS v15 End User Documentation:
+Work Planning Module
+Example: We entered 111PW-1, then Save.
+To enter the next Management Unit #, 111PW-2 just override the last character of previous entry, for
+example character 1 with 2, then click on Save. Now we have entered two accounting numbers 111PW-1
+and 11PW-2.
+To view the previous Management Unit number, use Green left pointing arrow. To view the next Admin
+No. use right Green arrow or click on the Open Search to search for other Management Units.
+Each level of Management Unit Number (Cost Account No) needs to be linked with the corresponding
+Management Unit (project, for example).
+Basically, Management Unit as mentioned above is a project, which needs to be tracked. The cost will be
+charged to specific Accounting Number – we call it Management Unit Number which we just finished
+setting up in our example. Now we are going to set up a linkage between Management Unit and
+corresponding Admin. Number. Another words, we need to indicate which projects are charged to
+which accounts.
+Please enter all Assets in the asset section which are identified as equipment. They are created in the
+asset section of MaintStar. Equipment use will be planned for and tracked in the Work Plan. Equipment
+would be vehicles such as trucks, graders, dozers, and other heavy equipment. Equipment could also be
+smaller items such as mowers, generators etc.
+Then come back and using Drop down windows select specific Equipment-(right side of the screen) for
+displayed Management Unit Number Streets Repairs. Then save.
+To assign more Systems to next Management Unit Number, override information in a Management Unit
+Number field by typing it over, then link is with Management Unit using drop down window, then Save
+after each entry. This linkage is mandatory.
+Note: Each System linked to specific accounting level can be entered only once and cannot be reused for
+a different Administrative Number. All linkages must be unique. Example Project A (Management Unit A)
+will be always charged to Administrative Number 11PW-1. You cannot charge the same project A to
+another Admin. Number 111PW-12, or 11AB-124,etc.
+Deleting or Changing Management Unit
+Go to Management Unit menu, open the search link, select the Management Unit you need to delete or
+change, click the check box on the line for the management unit you want to delete. The delete icon will
+appear over the list. click the delete trash can to delete.
+After entering Management Unit information, we can proceed to the next step. At the bottom of the
+screen, we show 12-month calendar (can be also setup on a weekly basis-up to 52 weeks). This
+information comes from Calendar setup (Planning menu, sub Option R). This calendar can be set up
+based on 8 working hours per day-default. Or 9 and 10 hours per day if required. This calendar also
+indicates number of working days per month (excluding weekends)
+Page | 14
+
+EAMS v15 End User Documentation:
+Work Planning Module
+If you check boxes on the left side, it will include weekends and holidays. The holidays schedule setup is
+under Maintstar Security module). You may override the number of working days available per each
+month right on the screen, then Save.
+Entering Labor, Equipment, and Material Resources.
+The next step is to enter departmental resources required to each level to perform all jobs. Basically, we
+will enter labor available (Labor Trades and number of people per trade, then Materials available and
+Equipment available to perform a job. For example, Streets department has 10 drivers, 3 electricians, 5
+sign inspectors and 10 trucks.
+For each accounting level you can set up this information. The setup for each level or department is
+independent, so we will not roll up labor and equipment resources at this moment to an upper level. It
+will be done through reporting later.
+Click on specific administrative accounting field (up to 8 levels) then click on Tab -Labor Available-top of
+the screen. The labor entry screen will be displayed. Click on New, then enter specific trades and
+quantity of people per trade. Upon completion click on Save. You may enter as many trades as you like.
+Upon completion Click on Equipment Available Tab and enter equipment information. Upon
+completion Click on Materials Available Tab and enter materials information. Repeat this entry for each
+accounting Administrative Number code AND each Administrative System. Exit the current window or
+the previously open window.
+The first part of the general setup is completed. Now we are ready for a Planning Screen Setup
+Work Planning Screen Setup
+Planning Menu, Option A.
+• The bottom section shows the budgets for the whole Management Unit that includes one or
+more activities, with the total Labor Days for all Activities, and total Daily Employees for all
+activities. The Planned Budget in the middle right hand side is the planned budget for one
+activity of the current screen.
+• The middle section shows the percentage distribution template, labor days, and crew days for
+the current activity.
+• The Left and Right Green Arrows will display all activities within the Admin System, or the next
+admin system.
+• Edit Task icon: allows you to edit the activity tasks. Click on the icon to edit. Click on the icon
+again to turn it off.
+Type: select Activity
+• Code: you must type in the exact activity code that was done under option K
+• Image Location: double click on the line and look for your image, then Save and exit
+Page | 15
+
+EAMS v15 End User Documentation:
+Work Planning Module
+Click on the New button to obtain the Working Planning #.
+Note: make sure to Select Admin Sys and Activity Code before clicking on Save button for the plan to be
+calculated properly.
+Note: the system is designed as a planning financial and management tool, not as a fixed program.
+Meaning that you can use this menu option to manipulate the program in different ways. Upon setup
+completion you would need to manipulate this information to obtain a specific result.
+This screen provides an annual plan visual information on a monthly –12 months (or weekly-52 weeks)
+basis for labor days and cost distribution per specific activity.
+The initial selection whether the planning is to be done on the weekly or monthly basis is under Planning
+Module Menu, Option R-Calendar setup. Please do not switch from weekly to monthly planning at your
+discretion or vice versa. This is a one-time setup. Decide up front and stay with it until the end of the
+planning year.
+This screen allows us to link activity to each Administrative System, (specific department or project) so
+we can calculate later a monthly basis labor requirements per Administrative System.
+An Management Unit may have multiple activities attached to it. . For example, for Streets departments
+the following activities are to be performed:
+• Sweeping
+• Streets repairs
+• Signs and traffic lights inspection
+Page | 16
+
+EAMS v15 End User Documentation:
+Work Planning Module
+Linking Management Unit with corresponding Activity
+Let Maintstar know which activities need to be performed per Administrative System, a linkage needs to
+be established. You MUST complete all fields in Activity Code (option K) before linking to Management
+Unit. Click on New, select Management Unit using drop down window, then select Activity code. For
+instance, Management Unit = Streets, Activity Code=Asphalt Repairs, Sweeping, etc.
+Labor Tab – Equipment Tab – Material Tab
+Note: make sure to click on Save (OK button) for the Work Planning to be calculated properly. If changes
+are made elsewhere after the Work Planning has been done, make sure to click on Save for the work
+planning to be re-calculated.
+Labor Tab (labor cost)
+This is hourly rate, and Qty is 1 person, not 1 hour. Click on labor tab, then click on Add Detail icon on
+the top toolbar (icon looks like a clipboard) if you need to add a worker. Click on Trade drop down box to
+select a worker; description and rates should be filled in automatically, this was set up under option N.
+(Labor Trades). You can manually change the rate if you wish. To add another Trade just hit enter or
+click on Add Detail. Total Labor Rate will be multiplied by the hours a day based on the calendar setup
+template. Total Labor Cost = Total Rate * Hrs a Day * Crew Days.
+To add additional workers, click on the Add Detail icon again. To delete worker, click on the worker,
+then click on the Del Detail icon (red scissors). Clicking on the wrong scissors will delete the Work
+Planning#, but you will be confirmed.
+Equipment Tab (equipment cost)
+This is hourly rate, and Qty is 1 equipment. Click on Equipment Tab, then click on Add Detail to add
+Equipment. Add and delete should be the same as Labor above. These pieces of equipment were set up
+under option P. To delete equipment, click on the equipment, then click on the Red Scissors. Total
+Equipment Rate will be multiplied by the hours a day based on the calendar setup template.
+Total Equipment Cost = Total Equipment Rate * Hrs. a Day * Crew Days.
+Material Tab (material cost)
+This is the daily rate. Click on Material Tab, then click on Add Detail to add material. These materials
+were set up under option O. Add and delete should be the same as Labor above. To delete a material,
+click on a material, then click on the Red Scissors. Material total rate will be multiplied by the crew days.
+Total Material Cost = Total Material Rate * Crew Days
+Work Units
+This is a yearly work units. Example: 100 trees a year, can be referred as inventory.
+Qty per Unit
+This is known as ‘level of effort’. If it is 1, then you can trim 100 trees a year. But if you can only do 50
+trees a year, then the qty per unit is 0.5. This is just one example. Different methods can be used
+depending on what and how you want to plan.
+Total Work Qty
+Work Units times Qty per Units. (100 * 1) = 100
+Page | 17
+
+EAMS v15 End User Documentation:
+Work Planning Module
+Daily Work Qty (meaning a day of work qty, and it does not have to be everyday)
+This is your estimation of how many trees you can do a day. Some call it ADP (Average Daily
+Productivity)
+Unit Cost
+Unit cost = planned budget / total work qty.
+Unit Hours:
+(next to Unit Cost) how long it takes to do one unit is:
+[(Labor Days) (8 hrs. a day)] / Total Work Qty
+Crew Size
+Each worker is counted as 1, under Labor Tab, if you have 2 workers, then crew size is 2, or if you have
+1.5 workers, then crew size is 1.5.
+Crew Days
+Equals Total Work Qty divides Daily Work Qty.
+Crew Days = Total Work Qty / Daily Work Qty
+These crew days then will be divided into 12 months. This is a yearly plan
+Budget Factor: check this box if you want to apply your Budget factor that was setup under
+Option S.- Calendar Setup (scroll to the right)
+Labor Days: equals crew size times crew days (labor days = crew size * crew days)
+Employees = Labor Days of Budgets Month / Workdays of that month
+This is the total number of all employees required for this period, for all activities, and for this admin
+system only.
+Lump Sum Budget, Non-General Fund: enter these amounts into the boxes if you have any to be added
+to Planned Budget.
+Budget Factor Box: if this box is checked, the total Planned Budget will be calculated based on your
+settings under Option R, and is calculated as follow:
+• Labor (Budget Factor) = (Total Labor Cost * Hrs. a Day * Crew Days * %Labor Factor), then add to
+the total Planned Budget (option S)
+• Equipment (Budget Factor) = (Total Equip. Cost * Hrs. a Day * Crew Days * %Equip. Factor), then
+add to the total planned budget (option S)
+• Material (Budget Factor) = (Total Material Cost * Crew Days * %Material Factor), then add to the
+total planned budget (option S)
+• Lump Sum Budget (Budget Factor) = (Lump Sum Budget * %Lump Sum Budget Factor), then add
+to the total planned Budget
+• Non General Fund (Budget Factor) = (Non General Fund * % Non-General Fund Factor), then add
+to the total planned Budget
+• Planned Budget: this is the total amount of the budget for the whole year.
+Page | 18
+
+EAMS v15 End User Documentation:
+Work Planning Module
+• Planned Budget=[[(labor rate * Wk Hr per Day) + (equipment rate * Wk Hr per Day) + (material
+cost per Day)] * (crew days) ] + (Lump Sum if any)
+• Add if required any overhead Lump Sum Cost and Non-General Funds Cost.
+Enter work units and quantity per unit (example: total streets =100 each street is 10 miles Enter average
+daily productivity example 5 miles/day. The information can be entered only in yellow fields.
+Information in gray fields is for viewing only.
+• Click on Drop down window and select trade. Enter hours required per activities. The rate will be
+displayed from the previous setup. Click on Add Details button on a tool bar to add another
+record if required.
+• Click on Equipment Tab and setup Equipment required per attached activities. Click on Add
+Details button to add another equipment
+• Click on Materials Tab and add materials required. Click on Save upon completion.
+• To add more activities to the same administrative system, click on New button on a Tool Bar,
+then select the same Management Unit and then select next activities from a drop-down
+window. Then repeat above steps. Click on Save upon each entry completion.
+• To view next activity for the same Management Unit use red arrows on a tool bar. If that was
+the last activity, you will be prompted for the next Management Unit displayed.
+• To add the Tasks for the Work Planning, click on the Edit Task icon on the toolbar. Finish your
+tasks, then click on the Edit Task icon again to close. This task will be printed when you print out
+the plan. Printouts of the plans will show all your resource requirements used in the plan.
+• To add new Management Unit, Click on New, then select Administrative System, then repeat
+steps above.
+• The system automatically assigns a unique consecutive work plan number to each work plan
+sheet-top right. It also stamps date and time
+• At the bottom the screen there are two windows are displayed.
+• The following calculated information will be displayed in a gray fields (no editing)
+• Crew Size, Crew Days, Unit Cost, Budget
+• The middle window: 12 months or 52 weeks- shows planning information for a single activity
+• The table is displayed with monthly (or weekly) information and shows projected percentage of
+a single activity scheduled monthly. For example, if we want to distribute activity evenly through
+entire year, we need to input 8,34% per months, which will total approx. 100% for an entire
+year.
+• Labor days- shows total annual and monthly or weekly labor days required per single activity.
+• The bottom window:12 months or 52 weeks- shows planning summary budget $ information for
+all activities for the whole Management Unit
+• Employees-Number of employees required per month or week to accomplish all activities. This
+number could have a decimal point example, 10,5 employees
+Page | 19
+
+EAMS v15 End User Documentation:
+Work Planning Module
+• The setup is completed. The next step is entering actual daily data in a system to track
+completed work.
+• Note: After the Work Planning is set up properly, the main three factor keys here are now the
+Work Units, Qty Per Unit, and Daily Work Qty. You will manipulate these three numbers to fit
+your plan. Let’s look at a few examples: 100 meetings, 5hrs each meetings, 500hrs total. There
+are three different ways to manipulate these three numbers.
+Example 1:
+Total Hours: 500hrs 500hrs 500hrs
+Work Unit: 1year 100meetings 5hrs
+Qty Per Unit (effort): 500hr 5hrs a meeting 100meetings
+As you can see total hours are 500hrs, but there are three different ways to manipulate these numbers.
+A) Adjust the total hours for the whole year B) You want 100 meetings a year, but you want to adjust
+how many hours a meeting C )You want 5hrs a meeting, and change the number of meetings.
+Example 2:
+-Wk Units: 12 meetings
+-Qty per Unit: 1 (hour per meeting)
+-Total Wk Qty: 12 hrs of meetings
+-Daily Work Qty: 16 hrs (assuming you have 2 workers, 8hrs a day. This is the maximum productivity of
+work they can do a day)
+-Unit Hour: 1 (this has to be 1 when dealing with hours)
+Example 3:
+-Wk Units: 12 meetings
+-Qty per Unit: 1 (1 day a month)
+-Total Wk Qty: 12 days of meetings
+-Daily Wk Qty: 2 days (assuming you have 2 workers, 8hrs a day. This is the maximum productivity of
+work they can do a day. Since unit is in days, 16hrs would be 2 days)
+-Unit Hour: 1 (this has to be 1 when dealing with hours)
+Example 4:
+-Wk Units: 1 year
+-Qty per Unit: 1200 (draining per year)
+-Total Wk Qty: 1200 drainings
+-Daily Wk Qty: 5 drainings a day
+Example 5:
+-Wk Units: 1200 miles
+-Qty per Unit: 1 (hour per mile)
+-Total Wk Qty: 1200 hrs
+-Daily Wk Qty: 5 hrs a day
+The above examples are more like planning strategy to meet your budgets or your man hours.
+Page | 20
+
+EAMS v15 End User Documentation:
+Work Planning Module
+Adjusting Labor days calculation
+To change the labor days, you must adjust the Qty per Unit as follows:
+Labor Days Desired (A)
+(A / B * C / D = E)
+Actual Work Entry
+Planning menu, Option F.
+The Actual work entry screen has two purposes:
+• It is used to make new work planning entries for Labor, Equipment, Materials, and Work
+Quantity quickly. The entries are made in a grid like the LEM section of Work Orders.
+• It is used to retrieve previous entries for editing
+The screen is divided into the top half and the bottom half. The bottom half is a grid used to make new
+entries or to display and edit entries that were previously made. The top half of the screen is used to set
+up common values for several of the fields in the bottom half grid. By setting them up first in the top
+half, there are fewer fields that will need to be selected for the entries in the bottom half. This helps you
+make the entries quicker and easier.
+Page | 21
+
+EAMS v15 End User Documentation:
+Work Planning Module
+To make Actual Work Planning entries:
+Make sure the bottom half of screen is clear. Use clear field button if needed.
+• Set the common values for your entries in the fields at the top
+• Set the date
+• Set the Management Unit and Activity
+• Set Location code and account number if used.
+• Click add entry at the bottom area.
+A new line will appear with the entry type set for labor because labor is the most common entry.
+Complete the line by choosing the technician’s name in the code/ID field. Enter Hours worked (use
+fractions, 1.5 for and hour and a half). Pay type if different from the default. The values from the top
+half should be filled in on the bottom automatically.
+To add a second line, you can use the ‘add entry’ button or press the enter key. The next line will
+appear, and the same type will be selected. In this example since we made a labor entry, the next line
+will be labor. When you are ready to change to another type of entry such as equipment or materials,
+Page | 22
+
+EAMS v15 End User Documentation:
+Work Planning Module
+you can change the type drop down. The field will change by typing the first letter such as L for labor, E
+for equipment, M for materials etc.
+Complete the fields for this entry such as the Id for the person and hours etc. You can also add crews
+with the add crew button. (Crews are created in the Work Order menu section. Follow the same pattern
+for equipment, materials and contractor.
+Work Quantity Entry
+Work Quantity entry is dependent on the activity chosen. Different activities have different units of
+measurements for Work Quantity. Because of this, make sure your entry before the work quantity, has
+the correct activity code listed. The Work Quantity will be displayed with the correct unit of measure for
+the previous activity. Example activity potholes, unit of measure might be a count of potholes. Striping
+might have a unit of measure the number of miles of striping performed etc. The Validate button,
+saving the entries.
+The validate button can be used to check that your entries have entered correctly and required fields
+have been entered correctly. When you save the entries, all correctly entered entries will go away on
+the screen. They will be saved in the database. IF a line has a problem it will remain on the screen for
+you to correct and save again.
+APPLY ALL Button: USE WITH CAUTION! When the top half window is filled-in with all the information,
+you can use this button to apply all the top information to all your entries on the bottom half screen.
+Again, it will APPLY TO ALL OF YOUR ENTRIES, NOT ONE. If you need to make one change to your entry,
+just go directly to your entry and make the change to simplify your confusion.
+Actual Entry - Work Order Entry
+*PLEASE NOTE: THIS FUNCTIONALITY HAS CHANGED SIGNIFICANTLY IN VERSION 15*
+Actual entries can record activities that are part of a work order or are stand alone.
+Actual entries can be used to record events that DO NOT have a related work order. For example, If
+you want to record some activities that have no asset but you want to record time and hours, such
+attending meetings, or time off etc., the Actual entry screen is a great way to track these activities.
+But if you DO have a work order already started, you can make your LEM entries here on the Actual
+entries screen if you prefer, instead of making the entries on the work order. To do this, the work
+order should be created, and you should know the work order number that you are recording time,
+materials, and work quantity to.
+You will see a work order field at the top section and on the individual entry lines.
+Page | 23
+
+EAMS v15 End User Documentation:
+Work Planning Module
+When you have the Work Order identified in your entry lines, (Labor, Equipment, Material,
+Contractor, and Work Quantity) THE ENTRIES WILL BE PUSHED TO THE WORK ORDER WHEN YOU
+SAVE.
+This is a NEW function and very powerful. You now have the choice of entering your LEM entries on
+the work order directly OR using the very popular Actual entry screen.
+Entry Tips
+This menu choice is designed to enter actual work completed. The entry can be done daily, weekly etc.
+Tips for speedy data entry. If you would like to eliminate mouse usage for drop down windows data
+selection, for example in a Type field enter first character (example L for Labor or Alt + Arrow Down).
+The same for Code and other dropdown fields.
+Use the enter key to indicate that a data entry is completed in a current entry line and to create a new
+line of entry. Some previously entered information will be defaulted from the previous line of entry, to
+speed up repeatable data entry.
+To delete a record which is not currently displayed, click on Find to select the record then click on
+Scissors on a Tool Bar to delete. Then click on Save. If the top half screen and bottom half screen are too
+confusing for you, please ignore the top half screen and just make your entries right on the bottom half
+screen.
+Page | 24
+
+EAMS v15 End User Documentation:
+Work Planning Module
+CLEAR FIELDS button:
+is used to clear the top half window; so when the new button is clicked, there will be no default data
+filled-in in the fields of your new entry.
+Retrieving Entries
+The actual entry screen can be used to retrieve entries already made for purpose of review or editing.
+RETRIEVE button: retrieving old transactions for editing purposes. The Fields at the top of the screen
+can act as filters to search existing records. Fill in the fields related to your search such as:
+• Dates from and to, for a certain date range.
+• Select a particular management Unit or activity code.
+If you leave any field empty, the empty field will not be filtered and all values for that field will be
+shown. First, do a lookup and pick an entry, then Retrieve will retrieve related entries that have
+matching Admin System and Activity. Click the Green Retrieve button to activate the search. The results
+will be shown in the table.
+In Editing Mode:
+RETRIEVE button: retrieving original old transactions for editing purposes. First, do a lookup and pick an
+entry, then Retrieve will retrieve and filter related entries that have matching Admin System, Activity,
+Page | 25
+
+EAMS v15 End User Documentation:
+Work Planning Module
+and Location. If different changes are made to these related transactions, retrieve feature will not
+consider them as orginal transactions, and will not retrieve them as related transactions.
+CLEAR FIELDS button: to clear the information on the top half screen.
+CLEAR SCREEN button: Clears the bottom half of the screen
+Work Planning Reports
+Rollup/Summary & Group Length Concept:
+This feature is for the reports and it works the same throughout MaintStar wherever it is available.
+- Rollup/Summary: is used when multiple Adm Systems are selected.
+- Group Length: is how far you want to rollup
+Example:
+- Management Unit # 00001 is M&O maintenance
+- Management Unit # 000012 is Road Administration
+- Management Unit # 00001221 is Road maintenance
+If we ran a report with these three management units selected and checked Rollup/Summary with
+Group Length of 5, then we will have the total cost maintenance for the park. As you can see M&O
+Maintenance #00001 has 5 digits. If we don’t check Rollup/Summary, then we would see a detail report
+of all three Management Unit In other words, Rollup/Summary provides the flexibility of summary cost
+report for any level. Let’s look at another example below.
+Running Reports
+Resource Requirements (Planning Menu Option B.)
+Page | 26
+
+EAMS v15 End User Documentation:
+Work Planning Module
+This screen will give you an overview of the resource requirements such as Labors, Equipment,
+Materials, that are used under each Management Unit Number. There are three radio buttons for Labor
+Requirements, Equipment Requirements, Material Requirements.
+• Management Unit: from the dropdown list select a management unit for the report. You can
+add additional management units. The ones you have selected appear below the field on the
+screen. Click on each Tab - Labor, Equipment, or Material, one by one to view your resource
+requirements report.
+• Labor Requirements Radio Button
+• This screen will show the Labor Resource Requirements for the Management Unit number you
+selected.
+• The second column will show how many Labor Resources available for each type of labor. This
+available labor number was set up under Option J. (Management Unit - Labor Available tab).
+• The third column is the header (label) for each row
+• The fourth column shows the total number of workdays for each type of worker for your
+Management Unit # you selected. Ex: you could have Maintenance Worker for one category,
+and Supervisor for another. (Note: Workers and Supervisors are created under Option A – Labor
+Tab).
+• (Yearly) Workdays = Number of Maintenance Worker * Crew days; the same for Supervisor, etc.
+• The Total Workdays then will be divided by 12 to find Monthly Workday.
+• Then take the number in each month divide by the number of Calendar Workdays (that was set
+up under Calendar Setup Option R., Current Year Button) to find the number of Employee for
+each day.
+• Take the Resource Labor Available minus Employee each day to obtain the remaining available
+Page | 27
+
+EAMS v15 End User Documentation:
+Work Planning Module
+• The Total Manpower: is the sum of all workdays and workers required for the plan. (see below)
+Equipment Requirements Tab
+This screen is almost the same as the Labor screen above.
+• To obtain the Equipment Days: Take the Equipment Quantity times Crew Days. (Equipment Qty
+was created under Option A – Equipment Tab),
+• Take the total Equipment Days divide by 12 to find the number of days the equipment is used in
+a month.
+• Take the number in each month divide by the number of Calendar Working Days = Qty needed a
+day.
+Material Requirement Tab
+This screen shows the total number of Material Requirement for the whole year.
+• Total = Material Qty * Crew Days (this was created under Option A., Material tab)
+• Monthly Material = Total / 12
+Work Planning Reports
+Planning Menu, Option C.
+Condition Tab
+This screen will allow you to run reports by Multiple Management Unit, or by Multiple Activities, or by
+Multiple Programs. If you leave all boxes blank, the report will show all your Work Planning, and that
+will take a bit longer time to run if you have a big database.
+Rollup/Summary and Group Length check box:
+Page | 28
+
+EAMS v15 End User Documentation:
+Work Planning Module
+Group Length is part of Rollup/Summary. The Group Length option is unavailable when the Rollup box is
+not checked. If Rollup box is not checked, the report will show the data in detail by default.
+-Labor = Rate * 8hrsaday * Crew Days
+-Equipment = Rate * 8hrsaday * Crew Days
+-Material = Rate * Crew Days
+Percent / Labor Days Distribution Tab
+Select the radio button labeled Percent/Labor Days Distribution.
+This screen will show the percentage and labor days distribution for each month throughout the whole
+year. This was done under option R., M. and K. The labor days come from your Working Planning (A),
+then divided by 12 months
+Page | 29
+
+EAMS v15 End User Documentation:
+Work Planning Module
+Actual Work Report
+Planning Menu, Option G.
+This powerful report has many ways it can be configured. The fields at the top of the screen filter the
+report data by date, Management Unit activity etc. If you do not set a value in a field, all data for that
+value will be displayed.
+The radio buttons select 4 different versions of the report. Set the conditions you want them click run to
+display the report.
+• Actual Work in summary and in detail format
+• Cost in detail and summary
+Page | 30
+
+EAMS v15 End User Documentation:
+Work Planning Module
+Work Status Report
+Planning Menu, Option H.
+This report runs very complicated and sophisticated calculations. This report runs dramatically faster in
+version 15. This screen gives you the report of Period to Date and Year to Date of all the plans you
+created under option A. See Option A for further info. and could be from W/O’s. Run your Bi-Weekly
+reports to find out what w/o’s were done for the work planning. Throughout our manual we use 8Hrs a
+day of work.
+Page | 31
+
+EAMS v15 End User Documentation:
+Work Planning Module
+Work Status (PTD/YTD) Report format (radio button): please see Work Planning (Option A) for further
+details of where the numbers come from.
+• Plan Days = Labor Days / 12
+• Act Days = from Actual Work Entry or from W/O’s Labor Hrs. (4hrs or more = 1 day, 12hrs or
+more= 2days), or MISC. Cost. The Labor Date, and Misc. Date is used here, not issued date or
+target date. The same for parts. It is suggested that to enter all costs, except labor and material
+cost, under Misc. Cost Tab so that MaintStar can generate the productivity report based on the
+work quantity, and hours.
+• Plan Qty = Daily Work Qty * Crew Days (option A)
+• Act Qty = from Actual Work Entry or from W/O’s Misc. Cost
+• Labor Days Annual Plan = Labor Days (option A)
+• YTD Actual are all from the actual entry and, if any, from wo’s labor cost and misc. cost
+• Work Qty Annual Plan = Total Work Qty (option A)
+• YTD Actual are all from the actual entry and, if any, from wo’s labor cost and misc cost
+• Total Cost Annual Plan = Planned Budget (option A)
+• YTD Actual are all from the actual entry and, if any, from wo’s labor cost and misc cost
+• Hour@Unit Annual Plan = Unit Hours (option A)
+• YTD Actual are all from the actual entry and, if any, from wo’s labor cost and misc cost
+• Cost@Unit Annual Plan = Unit Cost (option A)
+• YTD Actual are all from the actual entry and, if any, from wo’s labor cost and misc cost
+Page | 32
+
+EAMS v15 End User Documentation:
+Work Planning Module
+Work Calendar Report format (radio button)
+• Labor days = crew size * crew days
+• Labor days then will be used to divide into 12months to obtain monthly labor days.
+• Actual Daily Work Qty:
+o Crew Size (for any particular day) = total # of hours of all crew members (A) / by largest
+# of hours of any crew member (B)
+o Equivalent crew day (C) = total hours of all crew members (A) / (crew size (D) * Standard
+workday hours (E))
+The above numbers are computed for each day per activity and admin. System. They are then summed
+by each activity for all days of time in question. The average daily production = sum of all work quantity
+(F) / sum of all equivalent crew days (C). An example for a 10-hour workday:
+• 09/01/01 – Jim works 8 hours and Jake works 4 hours then leaves. Sara joins Jim and works 2
+hrs. They install 5 signs.
+• 09/02/01 – Jim works 5 hours and Jake works 3 hours and Sara works 5 hours. They install 4
+signs.
+• Calculations:
+09/01/01: crew size (D) = (8+4+2) / 8 = 1.75; Equiv. crew day (C) = (8+4+2) / (1.75 *
+10hrs/day) = .8
+09/02/01: crew size (D) = (5+3+5) / 5 = 2.6; Equiv. crew day (C) = (5+3+5) / (2.6 *
+10hrs/day) = .5
+Work Qty (F) = 5 + 4 = 9 signs
+Sum of Equiv. days = .8 + .5 = 1.3
+ADP (average daily productivity or work qty) = 9 / 1.3 = 6.9
+Overview report format (Radio Button): this screen will give you an overview of the last two screens.
+Page | 33
+
+EAMS v15 End User Documentation:
+Work Planning Module
+Planned Use Summary
+Planning Manu, Option J.
+This screen will give you a summary report of what you have created under Work Planning Option A
+comparing with what you have used under Option F. Select your conditions then click on the Result tab
+to run the report.
+Rollover Duplication
+Planning Menu, Option T
+This screen allows you to duplicate your previous budget year to the new budget year. If “Apply New
+Working Days” box is checked, new working days for the new year will be applied automatically. If it is
+not checked, the new year will have the same working days as the old one.
+BE CAREFUL!!! If you try to duplicate over an existing year, all you existing plans of that year will be
+deleted. You will be confirmed before deleting.
+Page | 34
+
+EAMS v15 End User Documentation:
+Work Planning Module
+Budgets Adjustment
+Planning Menu, Option U.
+This screen allows you to adjust the funds to fit your plans. It can be increased or decreased by the
+percentage or by the amount entered. You then can view the differences and decide to update the new
+rates or to cancel out without making any changes. We offer a quick backup function so you can back
+up before apply the new rates, and to restore right after at the moment you apply the new rates if you
+accidently made a mistake. These backup and restore functions are not meant for database backup, and
+they will not work on different versions of MaintStar.
+Retrieve button: select your Management Unit, then click on this button to obtain activity budgets.
+Page | 35
+
+EAMS v15 End User Documentation:
+Work Planning Module
+• Final box: enter the final amount you want to see for all budgets to be calculated. The key here
+is to enter the increase/decrease percentage number or the final number, and either to
+calculate all budgets evenly or calculate only highlighted lines.
+• Update W/Plan button: click on this button only if you are sure that you want to apply new
+working budgets and to overwrite the existing budgets.
+• Reduce: if this box is checked, the planning cost will be reduced; if not checked, it will increase.
+• Run Calculation: click on this button to view the new Total Working Budgets or the Final
+Budgets.
+• Same Percentage: enter the percentage# to increase (box unchecked) / reduce (box checked) all
+activities equally (the original budgets) or highlight the specific activities to be calculated.
+• Direct Input: enter the amount directly into the yellow box where you want to reduce or
+increase amount. The bottom Direct Input option and the top right Enter Data option have to
+sync.
+• Priority/Multi%: goes with top direct input option. First enter your priority number in the
+Priority box, like 1 or 2 or 3, then setup Priority/Multi%, then run the calculation button.
+• Highlight/Select Data allows you to run Calculations on the hilted lines only. Hold down Ctrl key
+and left click to highlight.
+• Enter Data allows you to enter the data directly to the budget yellow box and finish it with a tab.
+Make sure the Top right Enter Data is selected.
+• Apply New Rates: allows you to make changes (%) right on those small boxes for Labor,
+Equipment, Material rates setup, and click on Update DB button. Then to apply to the working
+planning, you must click on Update W/Plan button.
+Page | 36
+
+EAMS v15 End User Documentation:
+Work Planning Module
+• Select % Template allows to apply new % template without changing your template setup.
+Works with Update W/Plan button.
+• Activity Distribution and Text Description: if needed, you must make changes in your Activities
+Distribution and text description first, then go here to apply the changes to the existing plans.
+• Bottom Left Box: shows the different amount between the new working budget and original
+budget.
+• Bottom Right Box: shows the total of the total and the bottom left box.
+Page | 37
+

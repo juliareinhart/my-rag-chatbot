@@ -1,0 +1,107 @@
+## Enterprise Asset Management (EAMS) v15 
+
+# Asset Assessments 
+
+### End User Documentation 
+
+### Update 3/1/2024 
+
+
+Asset Assessments 
+
+## Asset Assessments 
+
+ MaintStar can record, track and report an Asset’s recorded Assessment. Assessments allow for an organization to provide Asset condition ratings/assessments to report on its condition. As each Asset may be comprised of different ratings, MaintStar allows for a multitude of Rating Types to suit each need. For instance, Road Segments are often rated using a Pavement Condition Index (PCI) of 0 100 whereas other Assets may be a simple 1-5 or A-F scale. These rating types are set at the Asset Type level, which is further discussed below. If Assessments are to be used, 3 critical concepts must be understood. 
+
+- **Condition Index:** this is the type of condition to be applied, for instance “PCI” of 0-100 with 0     representing Failed and 100 representing Excellent condition 
+
+- **Condition Rating:** the actual scale of which the Index uses – for instance:     o Vehicle Rating (Condition Index scale 1-5)     o 1 = Failed     o 2 = Poor     o 3 = Fair     o 4 = Good     o 5 = Excellent 
+
+- **Asset Type Condition Index:** the condition index can be set at the Asset Type level so that all     Assets inherit the index When recording an Assessment, the following information can be tracked to help determine an asset’s condition: 
+
+- Condition Index and Rating 
+
+- Assessed Value 
+
+- Assessed Replacement Cost 
+
+- Expected Life 
+
+- Remaining Life 
+
+- Observed Issues/Conditions as comments 
+
+## Assessment Setup 
+
+ As mentioned above, several things must be in place to utilize Asset Assessments: Condition Indexes, Ratings and the Asset Type must be configured. NOTE: The following requires appropriate permissions. Condition Index Set the Condition Index by going to Setup > Tables > Condition Index. 
+
+- Provide Index Name 
+
+- Provide the Worst and Best Rating Limits – this provides the boundaries of the scale, ie “1 is     best, 5 is worst” 
+
+
+Asset Assessments **Condition Rating** Set the Condition Rating by going to Setup > Tables > Condition Rating. The Condition Index used above will be used for instructional purposes. 
+
+- Click Add to add a new rating (step will be completed for each rating) 
+
+- Select the index created above 
+
+- Create ratings from 1 to 5 with corresponding rating values 
+
+
+Asset Assessments **Asset Type Setup** Configure the Asset Type Condition Index by navigating to Assets > Asset Type. Locate the desire Asset Type for which the Index will be applied. Click on the “Condition Index” tab and click Add. Add the desired Condition Indexes. Set the “Default” flag to the appropriate Condition Index. NOTE: Multiple Indexes can be applied but only ONE of them is considered a Default index. NOTE: Even though the setup is complete, Assets will only receive an Assessment once one is recorded. 
+
+## Recording an Assessment 
+
+ Recording an Assessment against an Asset can be completed on the Asset itself. To do so: 
+
+- Go to Assets > Assets 
+
+- Locate the desired Asset 
+
+- Click the Assessments Tab 
+
+- Click Add, select the appropriate Condition Index 
+
+- Record the Rating and complete desired Assessment Values 
+
+## Viewing an Assets Historic Assessment Data 
+
+ Historic Asset Assessments can be viewed directly from the Asset itself. This can be useful for analyzing asset condition over a period of time. 
+
+- Go to Assets > Assets 
+
+- Locate the desired Asset 
+
+- Click the Assessments Tab 
+
+
+Asset Assessments 
+
+## Creating an Assessment Query 
+
+ Utilizing the Query module to view all Asset Assessment data can be helpful to analyze a collection of asset conditions. With this data an organization can make data based decisions for replacement, budgeting or planning purposes. NOTE: The following requires appropriate permissions. 
+
+- Go to Reports > Query 
+
+- Select New Query 
+
+- Provide a name for the query 
+
+- Set the table to: asset_assessments 
+
+- Add the desired fields, the following are minimum recommendations:     o Asset ID     o Asset Type     o Condition Index     o Condition Rating     o Condition Description     o Assessment Date 
+
+## Additional Assessment Criteria 
+
+ To truly take advantage of Asset Assessments beyond simple ratings, MaintStar recommends that Assets contain other key information. Adding this data will help to further assess assets based on cost, expected life, etc. As such, the following fields are recommended: 
+
+- **Original Value** : the original cost/value of the Asset 
+
+- **Install Date** : this date is used to indicate when the asset becomes active – not to be confused     with Date in Service, Date Built, or Purchase Date 
+
+- **Replacement Cost** : the anticipated cost to replace the asset 
+
+- **Expected Life in Years** : set at Asset Type level As this data is entered and Assets recorded, additional analysis can be completed through reporting or the optional (licensed) Asset Management module. 
+
+

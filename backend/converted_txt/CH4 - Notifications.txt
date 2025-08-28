@@ -1,0 +1,116 @@
+Enterprise Asset Management (EAMS) v15
+Notifications
+End User Documentation
+Update 3/1/2024
+
+EAMS v15 End User Documentation:
+Notifications
+Notifications
+MaintStar can send email or text messages to internal and external users under a variety of
+circumstances. For Work Order, this includes:
+• When a WO is created
+• When a WO is saved with a new value in "Assigned To", or "Work in Progress"
+• When a WO is closed
+• When a part is received
+• When a task is complete
+• When a particular asset is added to a WO
+There are also notifications for Work Requests. More information can be found in the Work Request
+Chapter.
+Notification Types
+Notifications can be sent in three different ways: Internal Notifications, Email, and Text (SMS).
+Internal notifications are accessed in Home -> Notifications. This is a simple solution if you prefer to
+check your messages in the MaintStar application, or keep a record of them.
+Email notifications require that the user has a valid email address on record. The user can access their
+own email in Home -> My Preferences, or an administrator can access it via Security -> Users.
+Text (SMS) notifications require that the user has a valid Cell Phone on record. The user can access their
+own cell number in Home -> My Preferences, or an administrator can access it via Security -> Users.
+Note that a country code is needed for texting to work (1 for USA). This can be accomplished in two
+ways:
+• The user manually includes their country code in their phone number (ex: 1-555-555-5555)
+Page | 2
+
+EAMS v15 End User Documentation:
+Notifications
+• The administrator can have the system automatically prepend a Phone Country Code. This can
+be configured in Security -> System Settings.
+User Preferences
+User notification preferences determine which notifications will be received:
+• Notify by Text
+• Show Notifications in Notifications list (aka Internal Notifications)
+• Notify by Regular Email
+These options can be accessed by the user themselves in Home -> My Preferences, or by an
+administrator in Security -> Users. A user can receive any combination of internal notifications, email, or
+texts depending on these settings.
+If the administrator prefers the user to not have control over notification preferences, they can
+check May Edit Notifications Setup in Security -> Users.
+Work Order Notification Setup
+Configuring system wide Work Order Notifications is a system administrator task. To configure
+notifications for work orders, you will find two tabs in Security -> Workgroups: Notification by User and
+Notification by Role.
+Page | 3
+
+EAMS v15 End User Documentation:
+Notifications
+• Notification by Role: when configured, staff will only receive notifications for things directly
+relevant to them. You will see a grid of checkboxes, which will determine who receives
+notifications and under which circumstances. For example, you can set it up so that only
+"Assigned To" receives a message when "Assigned To" is changed, but "Supervisor" will receive a
+message when the WO is created or when the WO is closed.
+• Notification by User: Allows specific staff to be notified when specific things happen. For
+instance, when a Work Order is closed or changed and you only want one user to be notified,
+use this method.
+NOTE: You can not further define actions, ie “I want this, but not that”.
+Page | 4
+
+EAMS v15 End User Documentation:
+Notifications
+Both tabs also have dropdowns where you can choose Templates. Templates determine what the
+message says when it's generated. MaintStar comes with default templates, but you can also create
+your own.
+WR Notification Setup
+Notifications for Work requests work slightly differently. When a WO is created from a WR, this will
+trigger the same way as any other WO notification. But for other WR-specific events, notifications can be
+configured in Work Request -> WR Settings. Two tabs are relevant here: Notif. Templates and
+Operations.
+Operations is the tab for setting up Operations and Issues to categorize work requests (see
+documentation on WR Issues and Operations). On this screen, you can assign an internal user (i.e. not a
+member of the public) for notifications on a specific Issue or Operation. To do this, simply edit an issue
+or operation and add or remove users to that row as needed.
+What are these users being notified for exactly? This is where the Notif. Templates tab becomes
+relevant. On the Notif. Templates tab, the Notifications for Internal Users section determines which
+notifications those users receive and when they receive them:
+• Notify when Operation selected will trigger when an internal user is assigned to a particular
+Operation and a WR is created for that Operation.
+• Notify when Issue selected will trigger when an internal user is assigned to a particular Issue
+and a WR is created for that Issue.
+• Notify when WR is assigned is sent to the assigned user when a WR is created with an assignee
+or is edited to have an assignee.
+• Notify supervisor when WR is assigned is sent to the user in the Supervisor field when a WR is
+created with an assignee or is edited to have an assignee.
+• Notify when WR is closed is sent to Operation users when a work request is closed.
+• Notifications to Requester by Group - These notification options can be customized based on
+individual groups. Configure one group in particular by selecting it on the dropdown. Notifying a
+requester means notifying the user in the Customer ID field.
+All of these options have a corresponding Template dropdown for choosing a notification template (see
+Templates section). The notifications will not function unless a template exists for that notification.
+Notification Templates
+Templates determine what a message will say when it's sent. While MaintStar comes with default
+templates, you can also create your own to better suit your needs. You can view, edit, and create
+templates in Security -> Notification Templates.
+To create a new Template, click "Add" on top of the list of existing templates. Take careful note of the
+Template Type - this will determine where in the system you will be able to choose the template.
+Templates can contain special variables, which will be replaced based on the specific work order or work
+request. For example:
+Page | 5
+
+EAMS v15 End User Documentation:
+Notifications
+Work order $WONO has been assigned to $ASSIGNTO
+might become: Work order W000000001 has been assigned to JohnDoe
+A full list of available fields can be found on the right-hand side, along with descriptions. These fields are
+different depending on the Template Type. These fields will work in both the Subject line and the Body
+lines.
+You will notice there are two text boxes for the body of the message: Email Text and SMS and MaintStar.
+Both can be filled out.
+Page | 6
+

@@ -1,0 +1,77 @@
+Enterprise Asset Management (EAMS) v15
+CM (Corrective
+Maintenance) Work
+Order Templates
+End User Documentation
+Update 1/20/25
+
+EAMS v15 End User Documentation:
+CM Templates
+Background
+Maintstar has a new feature for Work Orders. It is a template which holds a configuration for common
+work orders that you perform periodically. It is like the PM template with one big difference. The PM
+template holds configuration for Work Orders, but it is tied to frequency and to a schedule. The purpose
+of the PM template is to create repeated Work Orders on a cyclical basis.
+The new CM Template has no frequency and is not tied to a repeated schedule in any way. The CM
+Templates can be created ahead of time and saved. You can have as many CM templates as you like.
+These are stored in the CM template section on the Work Order menu. You can apply them for a work
+order whenever you want. Think of the CM Templates as a library of common work orders which you
+can select and create as needed with much of the work order already filled in. MaintStar still has a Work
+Order duplication feature. If you used the duplication feature often, you can now create a template and
+build the work order from the template rather than searching for a previous work order to duplicate
+from.
+Instructions
+Page | 2
+
+EAMS v15 End User Documentation:
+CM Templates
+Creating the CM Template
+The templates are created and stored in the Work Order>CM Template section.
+Create the CM template with the configuration you want in the resulting Work Oder.
+You can set things such as:
+• Work Oder type
+• Workgroup
+• Priority
+• Work In Progress code
+• Text instructions in either
+o The Wo Summary box, or
+o The Asset Work Description field, whichever you use.
+• You can enter estimated hours and costs
+• You can enter LEM or fill the Lem from a Crew.
+• You can include attachments, and you include tasks and checklists.
+• Whatever you create and save in the CM Template will be added to the work order you create
+from the template.
+The Asset Type Tab
+The asset type tab allows you to list asset types that this template could be used with.
+This is optional.
+If you do not associate any asset type with the template it will be available for any asset types. If you do
+associate the template with one or more asset types, it will be available to use ONLY with those types.
+Page | 3
+
+EAMS v15 End User Documentation:
+CM Templates
+Making a Work Order from a CM Template
+There are 2 ways to use the CM Template to make a work Order.
+o Start from an asset screen
+o Start from the Work Order Screen
+Starting from an Asset Screen
+You can start the work order from the asset screen.
+1. Select the asset for your work order by locating it in the Asset section.
+2. Click the Gray ‘Create WO’ on the tool bar of the asset.
+3. Select the CM Template from the drop down
+4. Click the green New CM Work Order” button, a new work order will be created with all the
+elements from the CM Template. (There is also an option to create a new PM work order. Select
+the Pm template them click New Pm Work Order)
+Page | 4
+
+EAMS v15 End User Documentation:
+CM Templates
+Starting from a Work Order Screen
+From the work order screen,
+1. Click the Green ‘New WO button’ will open as usual with nothing from a template prefilled.
+2. If you click “more” a second popup window appears.
+3. A new work order will be created from the template. This Work Order will be filled with all the
+field values you have in the template. If you need to change any values, you can edit the work
+order after it has been created.
+Page | 5
+
