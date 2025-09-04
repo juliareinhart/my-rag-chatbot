@@ -91,7 +91,7 @@ npm start
 ```
 Open your browser to http://localhost:3000
 
-### 6. Run Batch Tests with Jupyter Notebook
+### 6. ⚡ Run Batch Tests with Jupyter Notebook
 
 You can run automated retrieval accuracy and timing tests with the included notebook:
 
