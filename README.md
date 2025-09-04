@@ -91,6 +91,29 @@ npm start
 ```
 Open your browser to http://localhost:3000
 
+### 6. Run Batch Tests with Jupyter Notebook
+
+You can run automated retrieval accuracy and timing tests with the included notebook:
+
+**1. Navigate to the backend folder:**
+```bash
+cd backend
+```
+**2. Make sure Jupyter is installed (inside your Python environment):**
+```bash
+pip install notebook
+```
+**3. Start Jupyter Notebook:**
+```bash
+jupyter notebook
+```
+**4.** Open TestingWithTimeTracker.ipynb from the Jupyter dashboard.
+**5.** Run all cells (Kernel → Restart & Run All) to execute batch tests.
+This will:
+∙ Query your stored embeddings against test prompts
+∙ Track response times
+∙ Log accuracy/performance metrics
+
 📂 Folder Structure
 ```bash
 my-rag-chatbot/
@@ -98,7 +121,8 @@ my-rag-chatbot/
 │   ├── docs/
 │   ├── store.js
 │   ├── query.js
-│   └── server.js
+│   ├── server.js
+│   └── TestingWithTimeTracker.ipynb
 ├── chroma-storage/
 ├── frontend/
 │   └── chat-for-workorders/
