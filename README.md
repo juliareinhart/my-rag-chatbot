@@ -107,8 +107,9 @@ pip install notebook
 ```bash
 jupyter notebook
 ```
-**4.** Open TestingWithTimeTracker.ipynb from the Jupyter dashboard.  
-**5.** Run all cells (Kernel → Restart & Run All) to execute batch tests.  
+**4. Open TestingWithTimeTracker.ipynb from the Jupyter dashboard.** 
+**5. Run all cells (Kernel → Restart & Run All) to execute batch tests.**
+
 This will:  
 ∙ Query your stored embeddings against test prompts  
 ∙ Track response times  
